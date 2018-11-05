@@ -11,10 +11,8 @@
 }
 .chart-section {
 	grid-area: chart-section;
-	border: red solid 1px;
 }
 
 .main-articles {
 	grid-area: main-articles;
-	border: red solid 1px;
 }
