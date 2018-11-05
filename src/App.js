@@ -3,6 +3,8 @@ import './App.css';
 import Home from './components/Home/Home';
 import Header from './components/Header/Header.jsx';
 import * as api from './api';
+import { Router } from '@reach/router';
+import Topics from './components/Topics/Topics';
 
 class App extends Component {
 	state = {
@@ -14,7 +16,11 @@ class App extends Component {
 				<header className="header-section">
 					<Header topics={this.state.topics} />
 				</header>
-				<Home />
+
+				<Router>
+					<Home path="/" topics={this.state.topics} />
+					<Topics path="/topics/:topicslug" />
+				</Router>
 			</div>
 		);
 	}

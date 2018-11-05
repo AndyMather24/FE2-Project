@@ -1,10 +1,11 @@
-.articles-container {
-}
 .article-info-container {
 	display: grid;
 	grid-template-columns: 2fr 3fr 3fr;
 	grid-template-rows: 2fr 2fr;
 	grid-template-areas: "img title title" "img votes comments";
+	margin: 15px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid grey;
 }
 
 img {
@@ -15,9 +16,12 @@ img {
 	grid-area: title;
 }
 .votes {
+	font-size: 12px;
 	grid-area: votes;
+	text-align: center;
 }
 
 .comments {
+	font-size: 12px;
 	grid-area: comments;
 }
