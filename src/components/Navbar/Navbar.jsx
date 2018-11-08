@@ -1,19 +1,11 @@
-import React, { Fragment } from 'react';
-import { Link } from '@reach/router';
+import React from 'react';
+
 import './Navbar.css';
 const Navbar = (props) => {
 	return (
 		<div>
 			<nav className="header-navbar">
-				{props.topics.map((topic) => {
-					return (
-						<Fragment key={topic._id}>
-							<Link className="nav-links" to={`/topics/${topic.slug}`}>
-								{topic.title}{' '}
-							</Link>
-						</Fragment>
-					);
-				})}
+				Create Article |  My Articles
 			</nav>
 		</div>
 	);

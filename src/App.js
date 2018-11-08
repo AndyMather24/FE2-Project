@@ -14,7 +14,7 @@ class App extends Component {
 		return (
 			<div className="App">
 				<header className="header-section">
-					<Header topics={this.state.topics} />
+					<Header />
 				</header>
 
 				<Router>
